@@ -1,0 +1,38 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    box-sizing: border-box;
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 30px;
+    border-bottom: 1px solid #000;
+}
+
+.site_name {
+    margin-right: 2em;
+}
+
+.nav_items {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav_pages {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.smiley {
+    margin: 0px 0.7em;
+}

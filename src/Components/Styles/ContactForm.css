@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+label {
+    margin: 0px 10px;
+    font-size: 18px;
+}
+
+textarea {
+    margin: 7px 10px;
+}
+
+.new_message_div {
+    display: block;
+    background-color: black;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new_message {
+    display: block;
+    font-family: 'Cormorant', serif;
+    color: #ece8e5;
+    line-height: 35px;
+}
+
+.browser_button {
+    margin: 0px 5px;
+}
+
+.email_components {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+}
+
+.question {
+    margin: 10px 0px;
+}
+
+.response_box_long {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    width: 600px;
+    font-family: 'Courier Prime', monospace;
+}
+
+.paragraph_response {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    font-family: 'Courier Prime', monospace;
+}
+
+textarea {
+    display: block;
+}
+
+.horizontal_divider {
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.form_questions {
+    border: 1px solid black;
+    display: block;
+    margin: auto;
+    width: 44em;
+}
+
+.cc-bcc {
+    margin-left: 330px;
+}
+
+.submit {
+    padding: 10px 17px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    letter-spacing: 1px;
+    display: block;
+    margin: auto;
+    margin-top: 1.5vw;
+}
+
+.submit::before {
+    content: 'SEND';
+    position: absolute;
+    top: -10%;
+    left: 4%;
+    background-color: #ECE8E5;
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s ease-in-out;
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 18px;
+    border: 1px solid rgb(0, 0, 0);
+}
+   
+.submit:hover::before {
+    top: -2px;
+    left: -1px;
+}
+
+.popup_title {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 1.8em;
+}
+
+.popup_description {
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.9em;
+}
+
+.popup_overlay {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 100px;
+  }
+  
+.popup_content {
+    background-color: #ECE8E5;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.close_popup {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    letter-spacing: 1px;
+    display: block;
+    margin: auto;
+    margin-top: 2.3vw;
+}
+
+.close_popup::before {
+    content: 'CLOSE';
+    position: absolute;
+    top: -10%;
+    left: 4%;
+    background-color: #ECE8E5;
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s ease-in-out;
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 18px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.close_popup:hover::before {
+    top: -2px;
+    left: -1px;
+}

@@ -1,0 +1,9 @@
+.featured-header {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 2.8em;
+    position: absolute;
+    left: 50%;
+    top: 19%;
+    transform: translate(-50%, -50%);
+}

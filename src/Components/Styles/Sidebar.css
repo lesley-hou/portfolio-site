@@ -1,0 +1,21 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #000;
+  }
+  
+.socials {
+    margin-top: auto;
+    list-style: none;
+    margin-bottom: 2em;
+}
+
+.socials img {
+    padding: 10px 0px;
+}

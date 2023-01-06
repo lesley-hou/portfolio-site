@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap');
+
+.featured {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+}
+
+.horizontal_divider {
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.featured-section {
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 16em;
+}
+
+.featured-experience {
+    display: flex;
+    align-items: center;
+}
+
+.featured-left {
+    width: 62%;
+}
+
+.experience-number {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 3.3em;
+    margin:  0.2em 0.4em;
+    width: 1em;
+}
+
+.org-name {
+    font-family: 'Cormorant', serif;
+    font-size: 1.6em;
+    font-style: italic;
+    margin: 0.18em;
+}
+
+.role {
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.9em;
+    color: #807f7f;
+    margin: 0.18em;
+}
+
+.show-more {
+    position: absolute;
+    left: 55%;
+    font-size: 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.featured-right {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    height: 100%;
+    border-left: 1px solid #000;
+}
+
+.detailed-company {
+    overflow-y: auto;
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #ece8e5;
+}
+
+  /* Chrome, Edge, and Safari */
+.detailed-company::-webkit-scrollbar {
+    width: 10px;
+}
+
+.detailed-company::-webkit-scrollbar-track {
+    background: #ece8e5;
+}
+
+.detailed-company::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 0px;
+    border: 2px solid #ece8e5;
+}
+
+.experience-details {
+    color: #ece8e5;
+    font-family: 'Cormorant', serif;
+}
+
+.windows-bar {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detailed-line {
+    margin: 0.8vh;
+    display: flex;
+    align-items: center;
+}
+
+.tldr-line {
+    margin: 0.8vh;
+    display: flex;
+}
+
+.detail-label {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+.detail-role-info {
+    font-family: 'Courier Prime', monospace;
+    font-size: 1em;
+    color: #807f7f;
+    display: block;
+}
+
+.role-point {
+    display: flex;
+    align-items: center;
+}
+
+.link-to-org {
+    text-decoration: underline;
+}
+
+.select-org-for-details {
+    margin: 2.5vh 0.8vh;
+    text-align: center;
+}
+
+.select-org {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 1.3em;
+}
