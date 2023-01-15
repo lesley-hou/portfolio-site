@@ -9,7 +9,7 @@ const About = () => {
             <div className="intro">
                 <div className="intro-left">
                     <h1 className="title">Hi, I'm Lesley</h1>
-                    <span className="description">
+                    <span className="about-description">
                         <Typewriter
                         options={{autoStart: true,
                                 loop: true,
@@ -23,9 +23,9 @@ const About = () => {
                         />
                     </span>
                 </div>
-                <img className="avatar" src={avatar} width="100vh"/>
-                <div className="description_and_buttons">
-                    <div className="about_text">
+                <img className="avatar" src={avatar}/>
+                <div className="description-and-buttons">
+                    <div className="about-text">
                         <p>Nice to meet you! I'm a student at Western University and Ivey Business School with a background in <strong>software development</strong> and <strong>business</strong>.</p>
                         <p>I am always seeking out new opportunities to learn and grow, and am excited to use my unique blend of technical and business knowledge to build projects with impact. </p>
                     </div>

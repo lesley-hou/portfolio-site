@@ -33,6 +33,7 @@ body {
   position: absolute;
   top: 2.8em;
   right: 6.5em;
+  width: 100px;
 }
 
 .title {
@@ -42,12 +43,13 @@ body {
   margin: 10px 0px;
 }
 
-.description {
+.about-description {
   font-family: 'Courier Prime', monospace;
-  font-size: 2em;
+  font-size: 1.3em;
+  margin: 2em;
 }
 
-.description_and_buttons {
+.description-and-buttons {
   display: flex;
 }
 
@@ -59,3 +61,37 @@ body {
   margin: 1.5em 6em;
 }
 
+@media (max-width: 750px) {
+  .intro {
+    width: 400px;
+  }
+
+  .title {
+    font-size: 3em;
+  }
+
+  .about-description {
+    font-size: 1em;
+  }
+
+  .avatar {
+    position: absolute;
+    top: 3.2em;
+    right: 3.2em;
+    width: 75px;
+  }
+
+  .about-text {
+    margin-right: 1em;
+  }
+
+  .description-and-buttons {
+    display: block;
+  }
+
+  .buttons {
+    flex-direction: row;
+    margin: 2em 4em 0 3em;
+  }
+
+}

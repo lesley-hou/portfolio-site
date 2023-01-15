@@ -133,8 +133,8 @@ const Featured = () => {
                     )}
                     {org !== "GC" && org !== "HW" && org !== "CSUS" && (
                     <div className="select-org-for-details">
-                        <div className="select-org">SELECT TO SEE MORE DETAILS</div>
-                        <img className="select-org-planet" src={planet} width="200vw"/>
+                        <div className="select-org">SELECT &nbsp;↗&nbsp; TO SEE <br></br> MORE DETAILS</div>
+                        <img className="select-org-planet" src={planet} width="160vw"/>
                     </div>
                     )}
                 </span>
