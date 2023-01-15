@@ -1,39 +1,42 @@
-import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import './Styles/MobileNavbar.css';
-import { FaBars } from "react-icons/fa";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import smile from '../Assets/Home/smile.png'
 
 const MobileNavbar = () => {
-    const [showNav, setShowNav] = useState(false)
+  const [openNavbar, setOpenNavbar] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(0);
 
-    let nav 
-    let navMask
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+  }, []);
 
-    if (showNav) {
-        nav = 
-        <div className="nav">
-            <Link onClick={() => setShowNav(false)}className="mobile-navbar-link" to="/">ABOUT ME</Link>
-            <Link onClick={() => setShowNav(false)} className="mobile-navbar-link"  to="/projects">EXPERIENCES</Link>
-            <Link onClick={() => setShowNav(false)} className="mobile-navbar-link"  to="/contact">CONTACT ME</Link>
+  return (
+    <nav className="reactive-navbar">
+      <div className="navbar-links">
+        <ul className="nav-items">
+          <li className="nav-pages"><img className="smiley-face" src={smile} width="35px" height="35px"/></li>
+          <li className="nav-pages"><a href="/">ABOUT ME</a></li>
+          <li className="nav-pages"><a href="/projects">EXPERIENCES</a></li>
+          <li className="nav-pages"><a href="/contact">CONTACT ME</a></li>
+        </ul>
+      </div>
+      <a href="#" className="toggle-button" onClick={() => setOpenNavbar(!openNavbar)}>
+        <span className="toggle-bar"></span>
+        <span className="toggle-bar"></span>
+        <span className="toggle-bar"></span>
+      </a>
+      <div className="site-name">LESLEY HOU</div>
+      {windowWidth <= 1000 && openNavbar && (
+        <div className="navbar-links-active">
+          <ul className="nav-items">
+            <li className="nav-pages"><a href="/">ABOUT ME</a></li>
+            <li className="nav-pages"><a href="/projects">EXPERIENCES</a></li>
+            <li className="nav-pages"><a href="/contact">CONTACT ME</a></li>
+          </ul>
         </div>
-
-        navMask =
-        <div className="nav-mask" onClick={() => setShowNav(false)}></div>
-    }
-
-    return ( 
-        <div className="mobile-navbar">
-            <div className="site-title">LESLEY HOU</div>
-            <FontAwesomeIcon className="show-menu-button"
-                icon="fas fa-bars"
-                onClick = {() => setShowNav(!showNav)}
-            />
-            {navMask}
-            {nav}
-
-        </div>
-    );
+      )}
+    </nav>
+  );
 }
- 
+
 export default MobileNavbar;

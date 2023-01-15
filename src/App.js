@@ -14,7 +14,7 @@ class App extends React.Component {
     return (
       <Router>
         <div className="App">
-          <Navbar/>
+          <MobileNavbar/>
           <Sidebar className="sidebar"/>
           <MadeWith/>
           <div className="content">
