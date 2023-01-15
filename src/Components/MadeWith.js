@@ -3,7 +3,7 @@ import './Styles/MadeWith.css';
 
 const MadeWith = () => {
     return ( 
-        <p className="made_with">Made with ❤</p>
+        <p className="made_with">Made with &#x2764;</p>
     );
 }
  
