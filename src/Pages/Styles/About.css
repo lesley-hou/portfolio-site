@@ -63,11 +63,12 @@ body {
 
 @media (max-width: 750px) {
   .intro {
-    width: 350px;
+    width: 325px;
+    margin-top: 30px;
   }
 
   .title {
-    font-size: 3em;
+    font-size: 2.8em;
   }
 
   .about-description {
@@ -78,7 +79,7 @@ body {
     position: absolute;
     top: 3.2em;
     right: 1.2em;
-    width: 75px;
+    width: 70px;
   }
 
   .about-text {
