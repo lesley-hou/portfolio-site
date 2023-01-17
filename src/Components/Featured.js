@@ -4,6 +4,7 @@ import minmize from '../Assets/Contact/minimize.png'
 import fullscreen from '../Assets/Contact/fullscreen.png'
 import close from '../Assets/Contact/close.png'
 import planet from '../Assets/Projects/planet.png'
+import arrow from '../Assets/Projects/diagonal-arrow.png'
 
 const Featured = () => {
     const [org, setOrg] = useState('');
@@ -133,7 +134,7 @@ const Featured = () => {
                     )}
                     {org !== "GC" && org !== "HW" && org !== "CSUS" && (
                     <div className="select-org-for-details">
-                        <div className="select-org">SELECT &nbsp;↗&nbsp; TO SEE <br></br> MORE DETAILS</div>
+                        <div className="select-org">SELECT &nbsp;<img src={arrow} width="15px"></img>&nbsp; TO SEE MORE DETAILS</div>
                         <img className="select-org-planet" src={planet} width="160vw"/>
                     </div>
                     )}

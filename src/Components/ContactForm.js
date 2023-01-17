@@ -40,36 +40,36 @@ const ContactForm = () => {
                     <div className="new_message_div">
                         <label className="new_message">New Message</label>
                         <div className="browser_buttons">
-                        <img className="browser_button" src={minmize} width="15px" height="15px"/>
-                        <img className="browser_button" src={fullscreen} width="15px" height="15px"/>
-                        <img className="browser_button" src={close} width="15px" height="15px"/>
+                            <img className="browser_button" src={minmize} width="15px" height="15px"/>
+                            <img className="browser_button" src={fullscreen} width="15px" height="15px"/>
+                            <img className="browser_button" src={close} width="15px" height="15px"/>
                         </div>
                     </div>
                     <div className="horizontal_divider" />
                     <div className="question">
-                        <label className="email_components">TO:</label>
+                        <label className="email-components">TO:</label>
                         <span>Lesley Hou (lesleyhou28@gmail.com)</span>
                         <span className="cc-bcc">CC / BCC</span>
                     </div>
                     <div className="horizontal_divider" />
                     <div className="question">
-                        <label className="email_components">SUBJECT:</label>
-                        <input className="response_box_long" type="text" name="subject" placeholder="RE: Your subject"/>
+                        <label className="email-components">SUBJECT:</label>
+                        <input className="response-box-long" type="text" name="subject" placeholder="RE: Your subject"/>
                     </div>
                     <div className="horizontal_divider" />
                     <div className="question">
-                        <label className="email_components">MESSAGE:</label>
-                        <textarea className="paragraph_response" name="message" rows="18" cols="90" placeholder="Type your message..."/>
+                        <label className="email-components">MESSAGE:</label>
+                        <textarea className="paragraph-response" name="message" placeholder="Type your message..."/>
                     </div>
                     <div className="horizontal_divider" />
                     <div className="question">
-                        <label className="email_components">FROM:</label>
-                        <input className="response_box_long" type="name" name="name" placeholder="Your name"/>
+                        <label className="email-components">FROM:</label>
+                        <input className="response-box-long" type="name" name="name" placeholder="Your name"/>
                     </div>
                     <div className="horizontal_divider" />
                     <div className="question">
-                        <label className="email_components">EMAIL:</label>
-                        <input className="response_box_long" type="reply_to" name="reply_to" placeholder="someone@example.com"/>
+                        <label className="email-components">EMAIL:</label>
+                        <input className="response-box-long" type="reply_to" name="reply_to" placeholder="someone@example.com"/>
                     </div>
                 </div>
                 <button id="submit-button" className="submit" type="submit">SEND</button>

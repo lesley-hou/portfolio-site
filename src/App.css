@@ -1,5 +1,9 @@
-.MobileNavbar {
-    position: absolute;
-    top: 0;
-  }
-  
+.made_with_container {
+  position: relative;
+}
+
+.made_with {
+  position: fixed;
+  bottom: 0;
+  right: 1em;
+}

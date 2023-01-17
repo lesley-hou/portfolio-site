@@ -2,11 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap');
 
 .featured {
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
+    width: 870px;
 }
 
 .horizontal_divider {
@@ -52,12 +48,14 @@
 }
 
 .show-more {
-    position: absolute;
-    left: 55%;
+    position: relative;
     font-size: 1.5em;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: 0.8em;
+    color: #000;
 }
 
 .featured-right {
@@ -143,4 +141,37 @@
     font-family: 'Cormorant', serif;
     font-style: italic;
     font-size: 1.3em;
+}
+
+@media (max-width: 900px) {
+    .featured-section {
+        flex-direction: column;
+        border: none;
+    }
+
+    .featured-left {
+        border: 1px solid #000;
+        width: 55%;
+    }
+
+    .featured-right {
+        border: 1px solid #000;
+        width: 55%;
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 499px) {
+    .featured-section {
+        margin-bottom: 400px;
+    }
+
+    .featured-left {
+        width: 45%;
+    }
+
+    .featured-right {
+        width: 45%;
+        margin-top: 3em;
+    }
 }

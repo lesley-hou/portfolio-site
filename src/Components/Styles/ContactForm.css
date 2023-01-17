@@ -30,7 +30,7 @@ textarea {
     margin: 0px 5px;
 }
 
-.email_components {
+.email-components {
     font-family: 'Cormorant', serif;
     font-style: italic;
 }
@@ -39,7 +39,7 @@ textarea {
     margin: 10px 0px;
 }
 
-.response_box_long {
+.response-box-long {
     border: 0;
     background-color: transparent;
     outline: none;
@@ -47,8 +47,10 @@ textarea {
     font-family: 'Courier Prime', monospace;
 }
 
-.paragraph_response {
+.paragraph-response {
     border: 0;
+    width: 85ch;
+    height: 18em;
     background-color: transparent;
     outline: none;
     resize: none;
@@ -81,7 +83,7 @@ textarea {
     letter-spacing: 1px;
     display: block;
     margin: auto;
-    margin-top: 1.5vw;
+    margin-top: 2vw;
 }
 
 .submit::before {
@@ -167,4 +169,41 @@ textarea {
 .close_popup:hover::before {
     top: -2px;
     left: -1px;
+}
+
+@media (max-width: 750px) {
+    .form_questions {
+        width: 29em;
+    }
+
+    .paragraph-response {
+        width: 55ch;
+        height: 18em;
+    }
+
+    .cc-bcc {
+        margin-left: 80px;
+    }
+
+    .response-box-long {
+        width: 27em;
+    }
+}
+
+@media (max-width: 499px) {
+    .form_questions {
+        width: 24em;
+    }
+
+    .cc-bcc {
+        margin-left: 15px;
+    }
+
+    .response-box-long {
+        width: 25em;
+    }
+
+    .submit {
+        margin-top: 5vw;
+    }
 }

@@ -16,7 +16,9 @@ class App extends React.Component {
         <div className="App">
           <MobileNavbar/>
           <Sidebar className="sidebar"/>
+            <div className="made-with-container">
           <MadeWith/>
+          </div>
           <div className="content">
             <Routes>
               <Route exact path="/" element={ <About className="content"/> } />
