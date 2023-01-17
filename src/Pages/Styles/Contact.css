@@ -12,5 +12,18 @@
 
 .description {
     font-size: 1.2em;
-    margin: 0.5vh 30vw;
+    margin: 0.5em auto 0.5em auto;
+    width: 600px;
+}
+
+@media (max-width: 750px) {
+    .description {
+        width: 450px;
+    }
+}
+
+@media (max-width: 499px) {
+    .description {
+        width: 400px;
+    }
 }

@@ -19,14 +19,15 @@ body {
 }
 
 .intro {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 8vh;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 650px;
   border: 1px solid #000;
   padding: 3em 0em 3em 1.5em;
   box-shadow: -18px 18px 0 0px #000000;
+  margin-bottom: 150px;
 }
 
 .avatar {
@@ -93,5 +94,12 @@ body {
   .buttons {
     flex-direction: row;
     margin: 2em 2em 0 1em;
+  }
+
+  .about-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
   }
 }

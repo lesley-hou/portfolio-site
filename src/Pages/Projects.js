@@ -5,11 +5,14 @@ import Featured from '../Components/Featured';
 const Projects = () => {
     return ( 
         <div className="Projects">
-            <div>
+            <div className="featured-header-container">
                 <h className="featured-header">FEATURED</h>
-                <Featured/>
+                <div className="featured-component-container-parent">
+                  <div className="featured-component-container">
+                      <Featured />
+                  </div>
+                </div>
             </div>
-            
         </div>
     );
 }

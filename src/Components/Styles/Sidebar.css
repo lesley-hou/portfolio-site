@@ -20,7 +20,7 @@
     padding: 10px 0px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
     .sidebar {
         display: none;
     }

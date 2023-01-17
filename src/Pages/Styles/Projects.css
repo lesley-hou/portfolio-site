@@ -1,9 +1,23 @@
+.featured-header-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8vh;
+}
+
 .featured-header {
     font-family: 'Cormorant', serif;
     font-style: italic;
     font-size: 2.8em;
-    position: absolute;
-    left: 50%;
-    top: 19%;
-    transform: translate(-50%, -50%);
+}
+
+.featured-component-container-parent {
+    display: flex;
+    justify-content: center;
+}
+
+.featured-component-container {
+    margin: 1.5em;
 }
