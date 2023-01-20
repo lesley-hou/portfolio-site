@@ -1,6 +1,7 @@
 import React from 'react';
 import './Styles/Projects.css';
 import Featured from '../Components/Featured';
+import OtherProjects from '../Components/OtherProjects';
 
 const Projects = () => {
     return ( 
@@ -10,6 +11,7 @@ const Projects = () => {
                 <div className="featured-component-container-parent">
                   <div className="featured-component-container">
                       <Featured />
+                      <OtherProjects/>
                   </div>
                 </div>
             </div>
