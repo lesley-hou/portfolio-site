@@ -13,7 +13,6 @@
 }
 
 .vertical-divider {
-    width: 1px;
     height: 100%;
     border-right: 1px solid #000;
 }
@@ -69,8 +68,58 @@
     font-size: 1.1em;
     border: 1px solid #000;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
 }
 
 .project-show-detail-button:hover {
     background-color: #d3d0ce;
   }
+
+  @media (max-width: 900px) {
+    .projects-frame {
+        flex-direction: column;
+        margin-bottom: 30em;
+        border: none;
+        align-items: center;
+  }
+
+  .vertical-divider {
+    display: none;
+  }
+
+  .project-div {
+    width: 481px;
+    border: 1px solid #000;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+  }
+
+  .project-show-detail-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+    
+}
+
+@media (max-width: 499px) {
+    .projects-frame {
+        flex-direction: column;
+        margin-bottom: 38em;
+        border: none;
+        align-items: center;
+  }
+
+    .project-div {
+        width: 390px;
+        border: 1px solid #000;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin-bottom: 1em;
+    }
+}

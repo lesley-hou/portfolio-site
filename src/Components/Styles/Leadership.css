@@ -33,3 +33,16 @@
     font-size: 0.9em;
     color: #807f7f;
 }
+
+
+@media (max-width: 900px) {
+    .leadership-frame {
+        width: 481px;
+    }
+}
+
+@media (max-width: 499px) {
+    .leadership-frame {
+        width: 390px;
+    }
+}

@@ -147,6 +147,7 @@
     .featured-section {
         flex-direction: column;
         border: none;
+        margin-bottom: 14em;
     }
 
     .featured-left {
@@ -163,7 +164,7 @@
 
 @media (max-width: 499px) {
     .featured-section {
-        margin-bottom: 400px;
+        margin-bottom: 16em;
     }
 
     .featured-left {

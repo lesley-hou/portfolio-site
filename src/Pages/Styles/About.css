@@ -8,6 +8,10 @@
   font-size: 18px;
   border: 1.5px solid #000;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
 
 .about-button:hover {
@@ -94,12 +98,5 @@ body {
   .buttons {
     flex-direction: row;
     margin: 2em 2em 0 1em;
-  }
-
-  .about-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
   }
 }
