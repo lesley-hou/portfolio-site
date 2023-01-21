@@ -1,0 +1,125 @@
+.projects-frame {
+    display: flex;
+    height: 400px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.project-div {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-divider {
+    height: 100%;
+    border-right: 1px solid #000;
+}
+
+.project-title {
+    font-family: 'Cormorant', serif;
+    font-size: 1.9em;
+    margin: 0;
+}
+
+.project-title-and-logo {
+    display: flex;
+}
+
+.project-description-short {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 1.2em;
+    margin: 5px 0 10px 0;
+}
+
+.project-labels-container {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.project-label {
+    display: inline-block;
+    background: #000;
+    color: #d3d0ce;
+    padding: 5px 10px 5px 10px;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 0 5px 5px 5px;
+}
+
+.project-description-long {
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.9em;
+    margin: 1em;
+    color: #807f7f;
+}
+
+.project-show-detail-button {
+    margin-top: 8px;
+    height: 2.2em;
+    width: 6.6em;
+    white-space: nowrap;
+    background-color: transparent;
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 1.1em;
+    border: 1px solid #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.project-show-detail-button:hover {
+    background-color: #d3d0ce;
+  }
+
+  @media (max-width: 900px) {
+    .projects-frame {
+        flex-direction: column;
+        margin-bottom: 30em;
+        border: none;
+        align-items: center;
+  }
+
+  .vertical-divider {
+    display: none;
+  }
+
+  .project-div {
+    width: 481px;
+    border: 1px solid #000;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+  }
+
+  .project-show-detail-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+    
+}
+
+@media (max-width: 499px) {
+    .projects-frame {
+        flex-direction: column;
+        margin-bottom: 38em;
+        border: none;
+        align-items: center;
+  }
+
+    .project-div {
+        width: 390px;
+        border: 1px solid #000;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin-bottom: 1em;
+    }
+}

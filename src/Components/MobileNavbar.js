@@ -30,7 +30,7 @@ const MobileNavbar = () => {
         <div className="navbar-links-active">
           <ul className="nav-items">
             <li className="nav-pages"><a href="/">ABOUT ME</a></li>
-            <li className="nav-pages"><a href="/projects">EXPERIENCES</a></li>
+            <li className="nav-pages"><a href="/projects">PROJECTS</a></li>
             <li className="nav-pages"><a href="/contact">CONTACT ME</a></li>
           </ul>
         </div>
