@@ -30,7 +30,7 @@ const About = () => {
                         <p>I am always seeking out new opportunities to learn and grow, and am excited to use my unique blend of technical and business knowledge to build projects with impact. </p>
                     </div>
                     <div className="buttons">
-                        <button className="about-button" onClick={() => window.open('https://drive.google.com/file/d/1P_yBxEAqqGBLLDG7extuYdMiENFUxMp_/view?usp=sharing')}>RESUME</button>
+                        <button className="about-button" onClick={() => window.open('https://drive.google.com/file/d/1fM3nc5hMjDQOUlsJRtwjwNE805oYdGR9/view?usp=sharing')}>RESUME</button>
                         <button className="about-button" onClick={() => window.location.href = '/contact'}>LET'S CHAT!</button>
                     </div>  
                 </div>
