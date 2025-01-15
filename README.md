@@ -43,4 +43,5 @@ npm run dev
 - [tailwindcss](https://tailwindcss.com/) for styling
 - [framer-motion](https://www.npmjs.com/package/framer-motion) for animations
 - [fuse.js](https://www.fusejs.io/) for searching
+- [react-sketch-canvas](https://www.npmjs.com/package/react-sketch-canvas) for doodling
 - deployed using [aws](https://aws.amazon.com/amplify/hosting/) 
