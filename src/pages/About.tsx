@@ -29,11 +29,11 @@ const About: React.FC = () => {
   return (
     <Layout>
       <div className="grid grid-cols-12 gap-4 min-h-[calc(100vh-180px)] px-8">
-        <div className="col-span-3"></div>
+        <div className="col-span-2 sm:col-span-3"></div>
 
         {/* Main Content */}
         <motion.div
-          className="col-span-6 flex flex-col justify-center"
+          className="col-span-8 sm:col-span-6 flex flex-col justify-center"
           initial="hidden"
           animate="visible"
           variants={textBlockVariants} 
@@ -82,7 +82,7 @@ const About: React.FC = () => {
           {/* Projects Section */}
           <motion.div className="my-4" variants={lineVariants}>
             <p className="text-porcelain font-vt323 text-2xl mb-4">projects</p>
-            <div className="flex flex-row">
+            <div className="flex flex-col xl:flex-row gap-4 xl:gap-0">
               {projects.map((project, index) => (
                 <Project
                   key={index}
@@ -95,8 +95,7 @@ const About: React.FC = () => {
             </div>
           </motion.div>
         </motion.div>
-
-        <div className="col-span-3"></div>
+        <div className="col-span-2 sm:col-span-3"></div>
       </div>
     </Layout>
   );

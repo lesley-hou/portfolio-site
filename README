@@ -4,7 +4,7 @@ welcome to v2 of my personal website!
 ## running instructions
 clone the repo
 ```
-git clone https://github.com/lesley-hou/portfolio-site
+git clone https://github.com/lesley-hou/portfolio-site.git
 ```
 
 cd into the project folder

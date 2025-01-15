@@ -127,7 +127,7 @@ const SearchPopover: React.FC<SearchPopoverProps> = ({ onClose }) => {
             onClick={onClose}
             className="text-gravel text-sm mt-2 flex items-center focus:outline-none"
           >
-            Press <kbd className="mx-1">esc</kbd> to close
+            Press <kbd className="mx-1">esc</kbd> or tap to close
           </button>
         </motion.div>
       </AnimatePresence>

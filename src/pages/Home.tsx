@@ -39,8 +39,8 @@ const Home: React.FC = () => {
   return (
     <Layout>
       <div className="flex flex-col justify-center items-center min-h-[calc(100vh-180px)] px-8">
-        <motion.div
-          className="flex flex-row items-center justify-center gap-12"
+      <motion.div
+          className="flex flex-col lg:flex-row items-center justify-center gap-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -55,28 +55,31 @@ const Home: React.FC = () => {
             <motion.p className="text-gravel font-inter font-thin" variants={lineVariants}>
               {`<welcome>`}
             </motion.p>
-            <motion.h1 className="text-porcelain font-inter font-semibold text-7xl" variants={lineVariants}>
+            <motion.h1 className="text-porcelain font-inter font-semibold text-5xl sm:text-7xl" variants={lineVariants}>
               lesley hou
             </motion.h1>
-            <motion.p className="text-porcelain font-inter font-light text-xl" variants={lineVariants}>
+            <motion.p className="text-porcelain font-inter font-light text-md sm:text-xl" variants={lineVariants}>
               incoming software engineer @ hubspot
             </motion.p>
-            <motion.p className="text-boulder font-inter font-thin text-lg" variants={lineVariants}>
+            <motion.p className="text-boulder font-inter font-thin text-sm sm:text-lg" variants={lineVariants}>
               developer &ndash; designer &ndash; occasional traveler &ndash; em dash enthusiast
             </motion.p>
 
             {/* Button to Open Popover */}
             <Button onClick={openPopover}>
-              press{" "}
-              <KeyWrapper>
-                <Kbd keys="command">cmd</Kbd>
-              </KeyWrapper>
-              <KeyWrapper>
-                <Kbd>enter</Kbd>
-              </KeyWrapper>{" "}
-              to start →
+              <span className="block sm:hidden">press here to start →</span>
+              <span className="hidden sm:block">
+                press{" "}
+                <KeyWrapper>
+                  <Kbd keys="command">cmd</Kbd>
+                </KeyWrapper>
+                {" "}
+                <KeyWrapper>
+                  <Kbd>enter</Kbd>
+                </KeyWrapper>{" "}
+                to start →
+              </span>
             </Button>
-
             <motion.p className="text-gravel font-inter font-thin" variants={lineVariants}>
               {`</welcome>`}
             </motion.p>
